@@ -17,7 +17,7 @@ function App() {
           </Box>
         </Flex>
         <Center>
-          <Image src={'https://picsum.photos/400'}/>
+          <Image src={'https://picsum.photos/500/400'} borderRadius="md"/>
         </Center>
       </Grid>
     </Box>
