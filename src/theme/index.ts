@@ -1,4 +1,4 @@
-import {theme as defaultTheme, extendTheme, withDefaultColorScheme} from '@chakra-ui/react'
+import { theme as defaultTheme, extendTheme, withDefaultColorScheme} from '@chakra-ui/react'
 import { leaf, smoke} from './colors'
 import { Button } from './button'
 import { Input, Textarea } from './forms'
@@ -25,7 +25,7 @@ const theme = extendTheme(
             scrollBehavior: 'smooth',
           },
           body: {
-            bg: colorMode === 'light' ? 'white' : 'smoke.900'
+            bg: colorMode === 'light' ? 'smoke.200' : 'smoke.900'
           }
         }),
       },
