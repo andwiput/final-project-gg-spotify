@@ -1,17 +1,14 @@
 import { Box, Button, Center, Flex, Grid, Heading, Text, Image, useColorMode } from "@chakra-ui/react";
-import SwitchTheme from "../components/switchTheme";
 import { FaSpotify } from 'react-icons/fa'
+import { authorize } from "../libs/spotify";
+import { useAuthen } from "../libs/useAuthen";
 
 const LandingPage = () => {
-    const { colorMode } = useColorMode()
+  const { colorMode } = useColorMode()
+  useAuthen()
+
   return (
     <Box maxW="100vw">
-      <Flex as={'nav'} justify={"space-between"} align={"center"} p={"1rem"}>
-        <Text fontSize={"2xl"} fontWeight={900}>
-          GenG Music
-        </Text>
-        <Text><SwitchTheme/></Text>
-      </Flex>
       <Grid as={'main'} templateColumns="1fr 1fr" gap="5vw" minH="90vh" px={"2rem"}>
         <Flex direction={"column"} justify={"center"}>
           <Heading as={"h1"} fontSize={"6xl"}>
@@ -21,7 +18,7 @@ const LandingPage = () => {
             Search your favorite tracks and create your own playlist
           </Text>
           <Box>
-            <Button size={"md"} leftIcon={<FaSpotify/>}>Login with Spotify</Button>
+            <Button size={"md"} leftIcon={<FaSpotify/>} onClick={authorize}>Login with Spotify</Button>
           </Box>
         </Flex>
         <Center>
