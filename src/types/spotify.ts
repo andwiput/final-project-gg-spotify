@@ -1,6 +1,6 @@
 export interface Track {
-    album?:             Album;
-    artists?:           Artist[];
+    album:             Album;
+    artists:           Artist[];
     available_markets?: string[];
     disc_number?:       number;
     duration_ms?:       number;
@@ -15,11 +15,21 @@ export interface Track {
     preview_url?:       string | null;
     track_number?:      number;
     type?:              string;
-    uri?:               string;
+    uri:               string;
 }
 
 export interface Tracks {
-    tracks?: Track[];
+    href?:     string;
+    items?:    Track[];
+    limit?:    number;
+    next?:     string;
+    offset?:   number;
+    previous?: string;
+    total?:    number;
+}
+
+export interface SearchResponse {
+    tracks?: Tracks;
 }
 
 export interface UserProfile {
@@ -32,6 +42,23 @@ export interface UserProfile {
     id?:            string;
     images?:        Image[];
     product?:       string;
+    type?:          string;
+    uri?:           string;
+}
+
+export interface PlaylistResponse {
+    collaborative?: boolean;
+    description?:   null;
+    external_urls?: ExternalUrls;
+    followers?:     Followers;
+    href?:          string;
+    id?:            string;
+    images?:        any[];
+    name?:          string;
+    owner?:         Owner;
+    public?:        boolean;
+    snapshot_id?:   string;
+    tracks?:        Tracks;
     type?:          string;
     uri?:           string;
 }
@@ -53,13 +80,13 @@ export interface Album {
     available_markets?:      string[];
     external_urls?:          ExternalUrls;
     href?:                   string;
-    id?:                     string;
-    images?:                 Image[];
-    name?:                   string;
+    id:                     string;
+    images:                 Image[];
+    name:                   string;
     release_date?:           string | Date;
     release_date_precision?: string;
     type?:                   string;
-    uri?:                    string;
+    uri:                    string;
 }
 
 export interface Artist {
@@ -67,6 +94,14 @@ export interface Artist {
     href?:          string;
     id?:            string;
     name?:          string;
+    type?:          string;
+    uri?:           string;
+}
+
+export interface Owner {
+    external_urls?: ExternalUrls;
+    href?:          string;
+    id?:            string;
     type?:          string;
     uri?:           string;
 }
