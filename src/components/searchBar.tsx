@@ -16,7 +16,7 @@ const SearchBar = () => {
 
   const handleSubmit: React.FormEventHandler<HTMLDivElement> = (e) => {
     e.preventDefault()
-    if (query.length <= 3) {
+    if (query.length <= 2) {
       return toast({
         title: 'Sorry!',
         description: 'Please type at least 3 letters.',
