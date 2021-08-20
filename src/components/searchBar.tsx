@@ -25,7 +25,6 @@ const SearchBar = () => {
         isClosable: true,
       })
     }
-    dispatch(setTracks([]))
     setIsLoading(true)
     getTracks(token, {
       q: query,
