@@ -24,10 +24,10 @@ const AlbumCard = ({ album }: { album: Album }) => {
   const textArtist = useColorModeValue('smoke.600','smoke.400')
 
   return (
-    <Box p={4} maxW={image?.width} bg={bg} borderRadius={'md'} >
-      <Image w={image?.width} h={image?.height} src={image?.url} />
-      <Text fontWeight={'bold'} mt={2}>{ album.name }</Text>
-      <Text color={textArtist}>{ artists }</Text>
+    <Box p={4} maxW={200} bg={bg} borderRadius={'md'} >
+      <Image w={200} h={200} src={image?.url} />
+      <Text noOfLines={1} fontWeight={'bold'} mt={2}>{ album.name }</Text>
+      <Text noOfLines={1} color={textArtist}>{ artists }</Text>
       <Link isExternal color={color} href={ album.external_urls.spotify }>Check on Spotify!</Link>
     </Box>
   )
