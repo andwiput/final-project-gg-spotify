@@ -22,7 +22,7 @@ const SidebarItem = ({ icon, children, to }: {
   children: React.ReactNode,
   to: string
 }) => {
-  const bg = useColorModeValue('#e5e5e5', '#262626')
+  const bg = useColorModeValue('#cccccc', '#242424')
   return (
     <Flex
       alignItems="center"
