@@ -5,14 +5,14 @@ This is my final project to accomplish [#GenerasiGIGIH](https://sites.google.com
 ## Screenshots
 
 <img src="/images/screenshotgg1.png" alt="Preview Image" />
-<img src="/images/screenshotgg1.png" alt="Preview Image" />
-<img src="/images/screenshotgg1.png" alt="Preview Image" />
+<img src="/images/screenshotgg2.png" alt="Preview Image" />
+<img src="/images/screenshotgg3.png" alt="Preview Image" />
 
 ## Features
 
-- Create playlist with your favorite songs 🎼
+- **Create playlist** with your favorite songs 🎼
 - Switch Light/Dark Mode 🌞🌚
-- See new releases songs for your reference 🎊
+- See **new releases** songs for your reference 🎊
 
 ## Run on Local
 
@@ -47,7 +47,7 @@ This is my final project to accomplish [#GenerasiGIGIH](https://sites.google.com
 - `REACT_APP_SPOTIFY_CLIENT_ID` contains Spotify Client ID
 -  `REACT_APP_URL` contains the app Base URL e.g. https://localhost:3000/
 
-## Powered by
+## Tech
 
 - [Create React App](https://create-react-app.dev/) to initialize the project with 
 - [TypeScript](https://typescriptlang.org)
