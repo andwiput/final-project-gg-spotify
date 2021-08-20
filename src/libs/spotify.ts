@@ -1,9 +1,9 @@
-import { PlaylistResponse, SearchResponse, UserProfile } from '../types/spotify'
+import { AlbumsResponse, PlaylistResponse, TracksResponse, UserProfile } from '../types/spotify'
 import axios, { AxiosResponse } from 'axios'
 
-const send = axios.create({
-  baseURL: 'https://api.spotify.com/v1',
-})
+export const baseURL = 'https://api.spotify.com/v1'
+
+const send = axios.create({ baseURL })
 
 export const spotifyAuthUrl = (): string => {
   const options: string = new URLSearchParams({
@@ -25,9 +25,15 @@ export const getProfile = (accessToken: string): Promise<AxiosResponse<UserProfi
   })
 }
 
-export const getTracks = (accessToken: string, params: Object): Promise<AxiosResponse<SearchResponse>> => {
+export const getTracks = (accessToken: string, params: Object): Promise<AxiosResponse<TracksResponse>> => {
   return send.get('/search', {
     params,
+    headers: { Authorization: 'Bearer ' + accessToken },
+  })
+}
+
+export const getNewReleases = (accessToken: string): Promise<AxiosResponse<AlbumsResponse>> => {
+  return send.get('/browse/new-releases', {
     headers: { Authorization: 'Bearer ' + accessToken },
   })
 }
