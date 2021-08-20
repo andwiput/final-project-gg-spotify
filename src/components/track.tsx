@@ -36,7 +36,7 @@ const Track = ({ track }: { track: SpotifyTrack }) => {
     (image: SpotifyImage) => image.width === 64
   )
 
-  const bg = useColorModeValue('gray.100', 'gray.800')
+  const bg = useColorModeValue('smoke.300', 'smoke.800')
 
   return (
     <SlideFade in unmountOnExit>
