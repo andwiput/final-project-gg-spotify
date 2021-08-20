@@ -79,7 +79,7 @@ const ModalCreatePlaylist = ({ isOpen, onClose }: { isOpen: boolean, onClose: ()
           <SelectedTracks />
         </ModalBody>
         <ModalFooter>
-          <Button colorScheme="brand" onClick={handleSubmit}>Create</Button>
+          <Button colorScheme="leaf" onClick={handleSubmit}>Create</Button>
         </ModalFooter>
       </ModalContent>
     </Modal>
