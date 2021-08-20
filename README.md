@@ -4,13 +4,15 @@ This is my final project to accomplish [#GenerasiGIGIH](https://sites.google.com
 
 ## Screenshots
 
-<center><img src="/images/screenshotgg1.png" alt="Preview Image" /></center>
+<img src="/images/screenshotgg1.png" alt="Preview Image" />
+<img src="/images/screenshotgg1.png" alt="Preview Image" />
+<img src="/images/screenshotgg1.png" alt="Preview Image" />
 
 ## Features
 
-- 🎼 You can create playlist with your favorite songs
-- ☀🌙 Switch Light/Dark Mode 
-- 🎵 You can see new releases songs
+- Create playlist with your favorite songs 🎼
+- Switch Light/Dark Mode 🌞🌚
+- See new releases songs for your reference 🎊
 
 ## Run on Local
 
