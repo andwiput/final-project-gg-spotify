@@ -1,8 +1,14 @@
-import {Track, UserProfile} from './spotify'
+import {Artist, Track, UserProfile} from './spotify'
+
+export interface selectedTrack {
+    uri: string,
+    name: string,
+    artists: Artist[]
+}
 
 export interface PlaylistState {
     tracks: Track[],
-    selectedTracks: string[],
+    selectedTracks: selectedTrack[],
     form: {
         title: string,
         description: string
