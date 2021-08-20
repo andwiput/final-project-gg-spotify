@@ -18,7 +18,7 @@ const Home = () => {
       <Heading as="h1" size="lg" mb={6}>
         New Releases
       </Heading>
-      <Wrap spacing={6}>
+      <Wrap spacing={'3rem'}>
         {albums.map((album: Album) => (
           <WrapItem key={album.id}>
             <AlbumCard album={album} />
