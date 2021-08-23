@@ -23,7 +23,7 @@ This is my final project to accomplish [#GenerasiGIGIH](https://sites.google.com
 - Go to the project directory
 
   ```bash
-    cd generasi-gigih-final-project
+    cd final-project-gg-spotify
   ```
 
 - Install dependencies

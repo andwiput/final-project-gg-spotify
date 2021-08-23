@@ -20,7 +20,7 @@ export const useAuthen = () => {
     if (isAuth && user === null) {
       getProfile(token).then(({data}) => {
         dispatch(userStore(data))
-        history.push('/create-playlist')
+        history.push('/home')
       })
     }
   }, [isAuth, token, user, history, dispatch])
