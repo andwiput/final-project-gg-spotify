@@ -25,7 +25,7 @@ const AlbumCard = ({ album }: { album: Album }) => {
 
   return (
     <Box p={4} maxW={200} bg={bg} borderRadius={'md'} >
-      <Image w={200} h={200} src={image?.url} />
+      <Image w={200} h={180} src={image?.url} />
       <Text noOfLines={1} fontWeight={'bold'} mt={2}>{ album.name }</Text>
       <Text noOfLines={1} color={textArtist}>{ artists }</Text>
       <Link isExternal color={color} href={ album.external_urls.spotify }>Check on Spotify!</Link>
